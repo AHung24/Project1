@@ -1,0 +1,46 @@
+body{
+    background-color: #edc7b7;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+.me{
+    border-radius: 25px;
+    width: 350px;
+    height: 450px;
+    border: 5px solid;
+    padding: 5px;
+
+}
+
+nav{
+    background-color: #BAB2B5;
+    padding: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.welcome{
+    text-align: center;
+    font-size: 35px;
+}
+
+.description{
+    background-color: #BAB2B5;
+    padding: 25px;
+}
+
+p{
+    padding-right: 150px;
+    padding-left: 150px;
+
+}
