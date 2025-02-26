@@ -1,46 +1,106 @@
-body{
+body {
     background-color: #edc7b7;
     font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    margin: 0;
 }
 
-.me{
+.aboutcontainer {
+    display: flex;
+    align-items: center;  
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #BAB2B5;
+    border-radius: 15px;
+}
+
+.me {
     border-radius: 25px;
     width: 350px;
     height: 450px;
-    border: 5px solid;
+    border: 5px solid black;
     padding: 5px;
-
 }
 
-nav{
+/* Text */
+.aboutme {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 0;
+}
+
+nav {
     background-color: #BAB2B5;
     padding: 25px;
     display: flex;
     justify-content: right;
-    align-items: right;
-    
 }
 
-nav a{
+nav a {
     text-decoration: none;
     margin-right: 20px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.welcome{
+/*code from Professor Oakley*/
+.navcss:hover {
+    color: rgb(255, 255, 255);
+}
+
+.welcome {
     text-align: center;
     font-size: 35px;
+    margin-top: 50px;
+    font-weight: 900;
 }
 
-.description{
-    background-color: #BAB2B5;
-    padding: 25px;
+p {
+    padding: 0px;
 }
 
-p{
-    padding-right: 150px;
-    padding-left: 150px;
 
+
+/* Inspiration Page CSS */
+.inspointro{
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.artists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin: 0px 100px;
+}
+
+.artisttext {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.artimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.warholimg{
+    padding-right: 20px;
+}
+
+.contactme{
+    margin-left: 100px;
+}
+
+.email{
+    text-decoration: none;
+}
+
+img{
+    border-radius: 25px;
 }
