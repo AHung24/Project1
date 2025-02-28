@@ -1,17 +1,17 @@
 body {
-    background-color: #edc7b7;
+    background-color: #F5F5DC;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
 
-.aboutcontainer {
+.aboutbox {
     display: flex;
     align-items: center;  
     gap: 30px; 
     max-width: 1000px; 
     margin: 50px auto;
     padding: 25px;
-    background-color: #BAB2B5;
+    background-color: #D8CAB8;
     border-radius: 15px;
 }
 
@@ -32,17 +32,38 @@ body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px; 
+    background-color: #637891; 
+
+}
+
+
+
 nav {
-    background-color: #BAB2B5;
     padding: 25px;
     display: flex;
     justify-content: right;
+    text-transform: uppercase;
+}
+
+.logo{
+    justify-content: left;
+    padding: 0px;
 }
 
 nav a {
     text-decoration: none;
     margin-right: 20px;
-    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.navcss{
     font-weight: bold;
 }
 
@@ -80,13 +101,19 @@ p {
 
 .artisttext {
     flex: 1;
-    margin-right: 20px; 
+    margin-right: 25px; 
 }
 
 .artimg img {
     max-width: 100%;
     height: auto;
     border-radius: 25px;
+    
+}
+
+.artimg:hover img {
+    border: 5px solid #FF5733;
+    padding: 4px;
 }
 
 .warholimg{
@@ -95,6 +122,7 @@ p {
 
 .contactme{
     margin-left: 100px;
+    color: white;
 }
 
 .email{
@@ -103,4 +131,49 @@ p {
 
 img{
     border-radius: 25px;
+}
+
+.content{
+    background-color: #D8CAB8; /*change color*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px 100px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+
+}
+
+.footerstyle{
+    background-color: #637891;
+    padding: 10px;
+
+}
+
+
+/* from https://www.w3schools.com/cssref/pr_background-image.php */
+.bgimg{
+        background-image: url('../img/huntingtonbeach.jpg');
+        background-repeat: no-repeat;
+        padding: 0px ;
+        height: 250px;
+        margin-bottom: 750px;
+}
+
+.travel {
+    align-items: center;  
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #D8CAB8;
+    border-radius: 15px;
+}
+
+.food {
+    align-items: center;  
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #D8CAB8;
+    border-radius: 15px;
 }
