@@ -9,7 +9,7 @@ body {
     align-items: center;  
     gap: 30px; 
     max-width: 1000px; 
-    margin: 50px auto;
+    margin: 0px auto;
     padding: 25px;
     background-color: #D8CAB8;
     border-radius: 15px;
@@ -67,10 +67,30 @@ nav a {
     font-weight: bold;
 }
 
-/*code from Professor Oakley*/
+/*code from Professor Oakley*/ /* hover */
 .navcss:hover {
     color: rgb(255, 255, 255);
 }
+
+.artimg:hover img {
+    border: 5px solid #458CCB;
+    padding: 4px;
+}
+
+.travelimg:hover {
+    border: 5px solid #458CCB;
+    padding: 3px;
+}
+
+.foodimg:hover{
+    border: 5px solid #458CCB;
+    padding: 3px; 
+}
+
+.foodimg{
+    padding-right: 10px;
+}
+
 
 .welcome {
     text-align: center;
@@ -83,14 +103,16 @@ p {
     padding: 0px;
 }
 
-
-
 /* Inspiration Page CSS */
-.inspointro{
-    margin-left: 100px;
-    font-size: 25px;
+.pageintro{
+    margin-left: 105px;
+    font-size: 22px;
 }
 
+.listintro{
+    margin-left: 195px;
+    font-size: 22px;  
+}
 .artists {
     display: flex;
     justify-content: space-between;
@@ -109,11 +131,6 @@ p {
     height: auto;
     border-radius: 25px;
     
-}
-
-.artimg:hover img {
-    border: 5px solid #FF5733;
-    padding: 4px;
 }
 
 .warholimg{
@@ -143,10 +160,13 @@ img{
 
 }
 
+.link{
+    text-decoration: none;
+}
+
 .footerstyle{
     background-color: #637891;
-    padding: 10px;
-
+    padding: 10px;    
 }
 
 
@@ -159,7 +179,7 @@ img{
         margin-bottom: 750px;
 }
 
-.travel {
+.travel, .food {
     align-items: center;  
     max-width: 1000px; 
     margin: 50px auto;
@@ -168,12 +188,19 @@ img{
     border-radius: 15px;
 }
 
-.food {
-    align-items: center;  
-    gap: 30px; 
-    max-width: 1000px; 
-    margin: 50px auto;
-    padding: 25px;
-    background-color: #D8CAB8;
-    border-radius: 15px;
+li{
+    font-weight: 700;
+    padding-top: 25px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+/* .transition {
+    background-color: black;
+} */
+ 
+a{
+    text-decoration: none;
 }
