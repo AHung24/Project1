@@ -225,6 +225,15 @@ li a{
     margin-right: 400px;
 }
 
+.headerline{
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px 0px;
+    margin-right: 100px;
+}
+
+
 /*Code that Applies to All Pages*/
 header {
     display: flex;
