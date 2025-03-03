@@ -4,46 +4,6 @@ body {
     margin: 0;
 }
 
-.aboutbox {
-    display: flex;
-    align-items: center;  
-    gap: 30px; 
-    max-width: 1000px; 
-    margin: 0px auto;
-    padding: 25px;
-    background-color: #D8CAB8;
-    border-radius: 15px;
-}
-
-.me {
-    border-radius: 25px;
-    width: 350px;
-    height: 450px;
-    border: 5px solid black;
-    padding: 5px;
-}
-
-/* Text */
-.aboutme {
-    /*https://www.w3schools.com/cssref/css3_pr_flex.php*/
-    flex: 1;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 15px; 
-    background-color: #637891; 
-
-}
-
-
-
 nav {
     padding: 25px;
     display: flex;
@@ -77,9 +37,10 @@ nav a {
     color: rgb(255, 255, 255);
 }
 
-.artimg:hover img {
+.artimg:hover {
     border: 5px solid #458CCB;
     padding: 4px;
+
 }
 
 .travelimg:hover {
@@ -104,18 +65,64 @@ nav a {
     margin-bottom: 750px;
 }
 
+
+.aboutbox {
+    display: flex;
+    align-items: center;  
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 0px auto;
+    padding: 25px;
+    background-color: #D8CAB8;
+    border-radius: 15px;
+}
+
+.aboutme {
+    /*https://www.w3schools.com/cssref/css3_pr_flex.php*/
+
+    /*https://www.w3schools.com/css/css_border.asp*/
+    flex: 1;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    border: 10px double rgb(117, 115, 193);
+    border-radius: 15px;
+}
+
+.me {
+    border-radius: 25px;
+    width: 350px;
+    height: 450px;
+    border: 5px solid rgb(117, 115, 193);
+    padding: 5px;
+}
+
+
 .welcome {
     text-align: center;
     font-size: 35px;
-    margin-top: 50px;
+    margin: 50px 0px;
     font-weight: 900;
 }
+
+.introline{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+
 
 /* Inspiration Page CSS */
 .pageintro{
     margin-left: 105px;
     font-size: 22px;
 }
+
+.introheader{
+    margin-top: 50px;
+    font-size: 22px;  
+    text-align: center;
+}
+
 
 .artistsection {
     display: flex;
@@ -132,7 +139,6 @@ nav a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
     margin: 0px 100px;
 }
 
@@ -142,11 +148,8 @@ nav a {
     margin-right: 25px; 
 }
 
-.artimg img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 25px;
-    
+.artimg {
+    margin: 10px;    
 }
 
 .warholimg{
@@ -154,7 +157,7 @@ nav a {
 }
 
 .imginfo{
-    padding-top: 20px;
+    padding-top: 0px;
     color: grey;
 }
 
@@ -162,13 +165,18 @@ nav a {
     text-decoration: none;
 }
 
+.inspoline{
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
 
 /* Top Fives Code*/
 
 .travel, .food {
     align-items: center;  
     max-width: 950px; 
-    margin: 50px auto;
+    margin: 0px auto;
+    margin-bottom: 50px;
     padding: 25px;
     background-color: #D8CAB8;
     border-radius: 15px;
@@ -198,13 +206,35 @@ li a{
     padding-right: 10px;
 }
 
-.introheader{
+.listheader{
     margin-top: 50px;
     font-size: 22px;  
     text-align: center;
 }
 
+.listline{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.inlistline{
+    height: 3px;
+    background-color: black;
+    border: none;
+    margin: 10px 0px;
+    margin-right: 400px;
+}
+
 /*Code that Applies to All Pages*/
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px; 
+    background-color: #637891; 
+
+}
+
 img{
     border-radius: 25px;
 }
@@ -236,4 +266,11 @@ p {
     margin: 0px;
     padding: 0px;
     color: rgb(174, 170, 170);
+}
+
+hr{
+    height: 10px;
+    background-color: black;
+    border: none;
+    margin: 0px 50px;
 }
