@@ -25,6 +25,7 @@ body {
 
 /* Text */
 .aboutme {
+    /*https://www.w3schools.com/cssref/css3_pr_flex.php*/
     flex: 1;
     font-size: 16px;
     line-height: 1.6;
@@ -67,7 +68,10 @@ nav a {
     font-weight: bold;
 }
 
-/*code from Professor Oakley*/ /* hover */
+
+/* hover */
+
+/*code from Professor Oakley*/ 
 .navcss:hover {
     color: rgb(255, 255, 255);
 }
@@ -87,10 +91,17 @@ nav a {
     padding: 3px; 
 }
 
-.foodimg{
-    padding-right: 10px;
-}
 
+/*Home*/
+
+/* from https://www.w3schools.com/cssref/pr_background-image.php */
+.bgimg{
+    background-image: url('../img/huntingtonbeach.jpg');
+    background-repeat: no-repeat;
+    padding: 0px ;
+    height: 250px;
+    margin-bottom: 750px;
+}
 
 .welcome {
     text-align: center;
@@ -99,20 +110,23 @@ nav a {
     font-weight: 900;
 }
 
-p {
-    padding: 0px;
-}
-
 /* Inspiration Page CSS */
 .pageintro{
     margin-left: 105px;
     font-size: 22px;
 }
 
-.listintro{
-    margin-left: 195px;
-    font-size: 22px;  
+.artistsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D8CAB8;
+    margin: 50px 100px;
+    border-radius: 25px;
 }
+
+
 .artists {
     display: flex;
     justify-content: space-between;
@@ -120,6 +134,7 @@ p {
     margin-bottom: 30px;
     margin: 0px 100px;
 }
+
 
 .artisttext {
     flex: 1;
@@ -137,55 +152,31 @@ p {
     padding-right: 20px;
 }
 
-.contactme{
-    margin-left: 100px;
-    color: white;
-}
-
-.email{
-    text-decoration: none;
-}
-
-img{
-    border-radius: 25px;
-}
-
-.content{
-    background-color: #D8CAB8; /*change color*/
+.imginfo{
     padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0px 100px;
-    margin-bottom: 25px;
-    border-radius: 25px;
-
 }
 
 .link{
     text-decoration: none;
 }
 
-.footerstyle{
-    background-color: #637891;
-    padding: 10px;    
-}
 
-
-/* from https://www.w3schools.com/cssref/pr_background-image.php */
-.bgimg{
-        background-image: url('../img/huntingtonbeach.jpg');
-        background-repeat: no-repeat;
-        padding: 0px ;
-        height: 250px;
-        margin-bottom: 750px;
-}
+/* Top Fives Code*/
 
 .travel, .food {
     align-items: center;  
-    max-width: 1000px; 
+    max-width: 950px; 
     margin: 50px auto;
     padding: 25px;
     background-color: #D8CAB8;
     border-radius: 15px;
+}
+
+.twosections {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 0px 15px;
 }
 
 li{
@@ -197,10 +188,49 @@ li a{
     text-decoration: none;
 }
 
-/* .transition {
-    background-color: black;
-} */
- 
+.travelimg{
+    margin-right: 10px;
+}
+
+.foodimg{
+    padding-right: 10px;
+}
+
+.introheader{
+    margin-top: 50px;
+    font-size: 22px;  
+    text-align: center;
+}
+
+/*Code that Applies to All Pages*/
+img{
+    border-radius: 25px;
+}
+
 a{
     text-decoration: none;
+}
+
+.footerstyle{
+    background-color: #637891;
+    padding: 10px;    
+}
+
+.email{
+    text-decoration: none;
+}
+
+.contactme{
+    margin-left: 100px;
+    color: white;
+}
+
+p {
+    padding: 0px;
+}
+
+.moreinfo{
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
 }
